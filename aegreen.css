@@ -109,12 +109,14 @@ strong{
 #topbox{
     padding: 1em 2em 0;
     width: 74.3333%;
+    margin-top: 3em;
 }
 #header {
     background-color: #3B5998;
     border-bottom:1px solid #000;
     color: #fff;
     padding:10px;
+    
 }
 
 #header a:link{
@@ -177,7 +179,8 @@ strong{
     min-width: 50em;
     padding-bottom: 1.3em;
     text-align: center;
-    width: 90%;
+    position: fixed;
+    top:0%;
 }
 
 #mainMenu ol{
@@ -239,7 +242,7 @@ nav#mainMenu ol li.menuLink a:visited{
     border-radius: 0.5em;
     overflow: auto;
     padding: 2em 2em 50px;
-    width: 90%;
+    
 }
 
 #mainContent a:visited{
@@ -942,12 +945,30 @@ aside#upcoming{
     font-size: 10px;
     margin-left: 1em;
     padding: 0.5em;
-    margin-left: 57%;
-    position: fixed;
+    
+    
+    width: 2em;
+    height:45em;
+    position:fixed;
+    left:-0.5%;
+    top:100px;    
     
 }
+
+#upcoming #box h1{
+    visibility: hidden;
+}
+
+#upcoming h1:first-child{
+    transform: rotate(90deg);
+    position: relative;
+    top:3em;
+    font-size: 20pt;
+}
+
 #upcoming div.box{
     clear: both;
+    visibility: hidden;
 }
 
 #upcoming h2{
@@ -964,6 +985,42 @@ aside#upcoming{
 #upcoming ol.LecturesLink, #upcoming ol.AssignmentLink, #upcoming ol.examLink{
     padding-left: 0;
 }
+
+/* ----------------------- Upcoming Hover effect ---------------------------- */
+
+aside #upcoming:hover{
+    background-color: #FFF8DC;
+    border: 2px solid;
+    border-radius: 0.5em;
+    clear: both;
+    font-size: 10px;
+    margin-left: 1em;
+    padding: 0.5em;
+    
+    width: 20em;
+    height:45em;
+    position:fixed;
+    left:-0.5%;
+    top:100px; 
+}
+#upcoming div.box:hover{
+    clear: both;
+    visibility: visible;
+}
+
+#upcoming #box h1:hover{
+    visibility: visible;
+}
+
+#upcoming h1:first-child:hover{
+    transform: rotate(0deg);
+    position: relative;
+    top:3em;
+    font-size: 20pt;
+}
+
+
+/* ----------------------- End Upcoming Hover effect ---------------------------- */
 
 /* ===================  Footer Section        =============================== */
 footer{
